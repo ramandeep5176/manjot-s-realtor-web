@@ -509,7 +509,7 @@ Footer
   /* background-color: rgba(172, 255, 47, 0.329); */
 }
 .bg-grey {
-  background: var(--clr-grey-10);
+  background: var(--clr-grey-9);
 }
 
 /* extra 
@@ -565,11 +565,17 @@ Services
 /* bg-grey in globals */
 .service {
   background: var(--clr-white);
-  padding: 3rem 1.5rem;
+  padding: 2rem 1.5rem;
   margin-bottom: 2rem;
   border-radius: var(--radius);
   text-align: center;
   transition: var(--transition);
+}
+.service-card-image{
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  height: 40%;
+  object-fit: cover;
 }
 .service-icon {
   font-size: 2rem;
@@ -584,13 +590,10 @@ Services
   transition: var(--transition);
 }
 
-.service:hover p {
-  background: var(--clr-primary-5);
-  color: var(--clr-white);
-}
+
 .service:hover {
-  background: var(--clr-primary-5);
-  color: var(--clr-white);
+  background: var(--clr-grey-8);
+  
 }
 .service:hover .underline {
   background: var(--clr-white);
