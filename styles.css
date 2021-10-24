@@ -241,63 +241,68 @@ animation
     transform: scale(1);
   }
 }
-.nav-btn {
-}
+
 
 /*
 =============== 
-Products
+hero
 ===============
 */
-.products {
-  background: var(--clr-grey-10);
+.top-header{
+  height: 100vh;
+  margin-bottom: 15rem;
 }
-.products article {
-  padding: 2rem 0;
+.top-header img{
+
+object-fit: cover;
 }
 
-.product-text {
+/* extra 
+=============== 
+About
+===============
+*/
+
+/* section title added to globals */
+
+.about {
+  background-color: var(--clr-grey-10);
+  margin-top: 5rem;
+}
+
+.about-title {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.about-title .underline {
+  margin-left: 0;
+}
+.about-center {
+  display: grid;
+  gap: 3rem 2rem;
+}
+.about-img {
+  justify-self: center;
+}
+.newskills li {
+  text-transform: capitalize;
   color: var(--clr-grey-5);
-  max-width: 26rem;
-}
-.product {
-  margin-bottom: 2rem;
-}
-.product-img {
-  border-radius: var(--radius);
-  margin-bottom: 2rem;
-  height: 17rem;
-  object-fit: cover;
-}
-.product-price {
-  color: var(--clr-primary);
-}
-@media screen and (min-width: 768px) {
-  .product {
-    float: left;
-    width: 50%;
-    padding-right: 2rem;
-  }
 }
 @media screen and (min-width: 992px) {
-  .product {
-    width: 33.3%;
+  .about-center {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-img {
+    position: relative;
+  }
+  .about-img::before {
+    left: -2rem;
+  }
+  .about-info {
+    align-self: center;
   }
 }
-@media screen and (min-width: 1200px) {
-  .products-info {
-    float: left;
-    width: 30%;
-  }
-  .products-inventory {
-    float: left;
-    width: 70%;
-  }
-  .product {
-    margin-bottom: 0;
-    padding: 0 1rem;
-  }
-}
+
 /*
 =============== 
 Services
@@ -512,50 +517,7 @@ Footer
   background: var(--clr-grey-9);
 }
 
-/* extra 
-=============== 
-About
-===============
-*/
 
-/* section title added to globals */
-
-.about {
-  background-color: var(--clr-grey-10);
-}
-
-.about-title {
-  text-align: left;
-  margin-bottom: 2rem;
-}
-.about-title .underline {
-  margin-left: 0;
-}
-.about-center {
-  display: grid;
-  gap: 3rem 2rem;
-}
-.about-img {
-  justify-self: center;
-}
-.newskills li {
-  text-transform: capitalize;
-  color: var(--clr-grey-5);
-}
-@media screen and (min-width: 992px) {
-  .about-center {
-    grid-template-columns: 1fr 1fr;
-  }
-  .about-img {
-    position: relative;
-  }
-  .about-img::before {
-    left: -2rem;
-  }
-  .about-info {
-    align-self: center;
-  }
-}
 /*
 =============== 
 Services
@@ -611,3 +573,5 @@ Services
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* for slider */
