@@ -251,7 +251,14 @@ Hero
 ===============
 */
 .hero {
-  background: var(--clr-grey-9);
+  background: linear-gradient(
+      rgba(148, 175, 181, 0.9),
+      rgba(211, 197, 197, 0.6)
+    ),
+    url(./images/exterior/ext2.jpg) center/cover no-repeat fixed;
+
+  /* background-size: 100vh; */
+  /* background: var(--clr-grey-9); */
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
