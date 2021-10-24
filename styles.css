@@ -250,33 +250,29 @@ animation
 Hero
 ===============
 */
-
-.hero .underline {
-  margin-bottom: 0.5rem;
-  margin-left: 0;
-}
-.hero-img {
-  /* display: none; */
+.hero {
+  background: var(--clr-grey-9);
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
+  justify-content: center;
+}
 
-  /* height: 50vh; */
+.underline {
+  margin-bottom: 0.5rem;
+  margin: 0;
+  place-items: center;
+}
+.hero-img {
   width: 100%;
   height: 100%;
+  place-items: center;
 }
 .hero-photo {
-  /* min-height: 30vh;
-    min-width: 30vw; */
-
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  /* border-radius: var(--radius); */
-  position: relative;
-}
-.hero {
-  background: var(--clr-grey-9);
+  place-items: center;
 }
 .hero-icons a {
   color: var(--clr-grey-4);
@@ -289,44 +285,20 @@ Hero
   display: grid;
   place-items: center;
 }
-/* add just in case if social icons are broken */
-/* .hero-icons{
-  justify-items: start;
-  background: red;
-} */
 
 .hero-btn {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
 @media screen and (min-width: 992px) {
-  /* .hero-img {
-    display: block;
-    position: relative;
-  } */
-
+  
   .hero-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .hero-photo {
- 
-  }
-  /* .hero-img::before,
-  .about-img::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 0.25rem solid var(--clr-primary-5);
-
-    top: 1.5rem;
-    right: -1.5rem;
-    border-radius: var(--radius);
-  } */
 }
 
-/* extra 
+/*
 =============== 
 About
 ===============
