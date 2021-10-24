@@ -250,15 +250,14 @@ animation
 Hero
 ===============
 */
-.hero {
+/* .hero {
   background: linear-gradient(
       rgba(148, 175, 181, 0.9),
       rgba(211, 197, 197, 0.6)
     ),
     url(./images/exterior/ext2.jpg) center/cover no-repeat fixed;
 
-  /* background-size: 100vh; */
-  /* background: var(--clr-grey-9); */
+
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
@@ -273,14 +272,12 @@ Hero
 .hero-img {
   width: 80%;
   height: 80%;
-  /* max-height: 70vh; */
   place-items: center;
 }
 .hero-photo {
   max-height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  /* place-items: center; */
 }
 .hero-icons a {
   color: var(--clr-grey-4);
@@ -303,7 +300,7 @@ Hero
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-}
+} */
 
 /*
 =============== 
@@ -576,7 +573,7 @@ Services
 /* bg-grey in globals */
 .service {
   background: var(--clr-white);
-  padding: 2rem 1.5rem;
+  /* padding: 2rem 1.5rem; */
   margin-bottom: 2rem;
   border-radius: var(--radius);
   text-align: center;
@@ -585,7 +582,7 @@ Services
 .service-card-image {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
-  height: 40%;
+  height: 70%;
   object-fit: cover;
 }
 .service-icon {
@@ -598,6 +595,7 @@ Services
   transition: var(--transition);
 }
 .service p {
+
   transition: var(--transition);
 }
 
