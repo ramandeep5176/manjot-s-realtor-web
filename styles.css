@@ -182,7 +182,7 @@ animation
   }
 
   50% {
-    transform: scale(1.8);
+    transform: scale(1.2);
   }
 
   100% {
@@ -307,12 +307,44 @@ Hero
 headers
 ===============
 */
-/* .header-img {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-  } */
 
+.nav-btn a {
+  bottom: 2%;
+  right: 0%;
+  margin-bottom: 1rem;
+  margin-right: 0.6rem;
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  /* animation */
+  animation: bounce 4s ease-in-out infinite;
+  color: var(--clr-white);
+
+  text-transform: uppercase;
+  background: var(--clr-primary);
+  padding: 1rem 1rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 500;
+  transition: var(--transition);
+  font-size: 1rem;
+  border: none;
+  box-shadow: 10px 10px 10px rgba(19, 18, 18, 0.5);
+}
+
+.nav-btn :hover {
+  color: var(--clr-primary);
+  background: var(--clr-primary-light);
+}
+@media screen and (min-width: 652px) {
+  .nav-btn a {
+    bottom: 00%;
+    right: 0%;
+    margin-bottom: 3rem;
+    margin-right: 4rem;
+    padding: 1.25rem 2.5rem;
+  }
+}
 
 @media screen and (min-width: 652px) {
   .header-img {
