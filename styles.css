@@ -307,11 +307,11 @@ Hero
 headers
 ===============
 */
-.header-img {
+/* .header-img {
     height: 100vh;
     width: 100vw;
     object-fit: cover;
-  }
+  } */
 
 
 @media screen and (min-width: 652px) {
