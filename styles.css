@@ -307,12 +307,13 @@ Hero
 headers
 ===============
 */
+@media screen and (min-width: 652px) {
+  .header-img {
+    height: 100vh;
+    width: 100vw;
+  }
 
-.header-img {
-  height: 100vh;
-  width: 100vw;
- /* margin: 0 auto; */
- 
+  /* margin: 0 auto; */
 }
 
 /*
