@@ -161,6 +161,7 @@ ul {
   max-width: 1170px;
 }
 .hero-photo {
+  -o-object-fit: cover;
   object-fit: cover;
   /* border-radius: 50%; */
   /* height: 50vh; */
@@ -176,6 +177,19 @@ ul {
 animation
 ===============
 */
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes bounce {
   0% {
     transform: scale(1);
@@ -187,6 +201,26 @@ animation
 
   100% {
     transform: scale(1);
+  }
+}
+@-webkit-keyframes slidefromright {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(50px);
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 @keyframes slidefromright {
@@ -201,6 +235,26 @@ animation
   }
   75% {
     transform: translateX(50px);
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slidefromleft {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(-50px);
     opacity: 0.75;
   }
 
@@ -227,6 +281,21 @@ animation
   100% {
     transform: translateX(0px);
     opacity: 1;
+  }
+}
+@-webkit-keyframes explore {
+  0% {
+    transform: scale(1.5);
+    opacity: 0.1;
+  }
+
+  50% {
+    transform: scale(2);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 @keyframes explore {
@@ -317,6 +386,7 @@ headers
   z-index: 1;
   cursor: pointer;
   /* animation */
+  -webkit-animation: bounce 4s ease-in-out infinite;
   animation: bounce 4s ease-in-out infinite;
   color: var(--clr-white);
 
@@ -363,8 +433,9 @@ header-video
   /* height: 100vh; */
   padding-top: 0;
   /* height: 100vh; */
-  object-fit: cover;
   -o-object-fit: cover;
+  object-fit: cover;
+
   margin-top: 0;
 }
 
@@ -460,6 +531,7 @@ Services
 }
 .service-img {
   height: 17rem;
+  -o-object-fit: cover;
   object-fit: cover;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
@@ -567,6 +639,30 @@ Contact
   text-transform: uppercase;
   letter-spacing: var(--spacing);
 }
+.form-control::-webkit-input-placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-1);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+.form-control::-moz-placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-1);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+.form-control:-ms-input-placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-1);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+.form-control::-ms-input-placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-1);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
 .form-control::placeholder {
   font-family: var(--ff-primary);
   color: var(--clr-grey-1);
@@ -670,6 +766,7 @@ Services
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   height: 70%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .service-icon {
