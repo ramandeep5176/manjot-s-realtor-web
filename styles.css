@@ -383,7 +383,7 @@ headers
   margin-bottom: 1rem;
   margin-right: 0.6rem;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   cursor: pointer;
   /* animation */
   -webkit-animation: bounce 4s ease-in-out infinite;
@@ -416,7 +416,15 @@ headers
     padding: 1.25rem 2.5rem;
   }
 }
+/* video fix for iphone */
+.fix {
+  position: fixed;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+}
 
+/* video fix for iphone end */
 /*
 =============== 
 header-video
@@ -427,9 +435,11 @@ header-video
 }
 .header-container {
   margin-top: -1.4rem;
+  /* new code for video fix for iphone */
+  z-index: -5;
+  /* new code ends */
 }
 .header-video-potrait {
-
   width: 100vw;
   /* height: 100vh; */
   padding-top: 0;
@@ -447,6 +457,7 @@ header-video
 
 @media screen and (min-width: 652px) {
   .header-container {
+    margin-top: 0rem;
     height: 100vh;
     width: 100vw;
     margin-bottom: 7rem;
