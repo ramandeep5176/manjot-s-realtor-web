@@ -436,9 +436,10 @@ header-video
 }
 .header-video-potrait {
   width: 100vw;
-  height: 90vh;
+  height: 95vh;
   /* height: 100vh; */
   padding-top: 0;
+  
   
   z-index: -5;
   /* height: 100vh; */
@@ -499,7 +500,9 @@ About
 .about-photo {
   border-radius: 50%;
 }
+
 .about-title {
+
   text-align: left;
   margin-bottom: 2rem;
 }
@@ -763,7 +766,8 @@ Footer
   margin-right: auto;
 }
 .section-title {
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
   /* background-color: rgba(172, 255, 47, 0.329); */
 }
