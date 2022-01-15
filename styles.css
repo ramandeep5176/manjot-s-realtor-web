@@ -457,13 +457,14 @@ header-video
 @media screen and (min-width: 652px) {
   .header-container {
     margin-top: 0rem;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     z-index: -5;
     margin-bottom: 7rem;
   }
   .header-video {
     width: 100vw;
+    height: 110vh;
     object-fit: cover;
     z-index: -5;
     -o-object-fit: cover;
