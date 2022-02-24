@@ -321,10 +321,10 @@ headers
 */
 
 .nav-btn a {
-  bottom: 0.7%;
+  bottom: 0.81rem;
   right: 0%;
 
-  margin-right: 0.6rem;
+  margin-right: 0.8rem;
   position: fixed;
   z-index: 100;
   cursor: pointer;
@@ -335,7 +335,7 @@ headers
 
   text-transform: uppercase;
   background: var(--clr-primary);
-  padding: 2rem 7rem;
+  padding: 1.7rem 7rem;
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 500;
