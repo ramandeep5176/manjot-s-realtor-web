@@ -321,10 +321,10 @@ headers
 */
 
 .nav-btn a {
-  bottom: 0.81rem;
-  right: 0%;
+  bottom: 02rem;
+  right: 0;
 
-  margin-right: 0.8rem;
+  margin-right: 1rem;
   position: fixed;
   z-index: 100;
   cursor: pointer;
@@ -335,7 +335,7 @@ headers
 
   text-transform: uppercase;
   background: var(--clr-primary);
-  padding: 1.7rem 7rem;
+  padding: 1.7rem 2rem;
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 500;
@@ -409,7 +409,8 @@ About
   /* margin-top: 5rem; */
 }
 .about-photo {
-  border-radius: 50%;
+  border-radius: 0.7rem;
+  object-fit: cover;
 }
 
 .about-title {
@@ -426,6 +427,7 @@ About
 .about-img {
   justify-self: center;
 }
+
 .newskills li {
   text-transform: capitalize;
   color: var(--clr-grey-5);
@@ -442,6 +444,9 @@ About
   }
   .about-info {
     align-self: center;
+  }
+  .about-photo {
+    height: 80vh;
   }
 }
 
